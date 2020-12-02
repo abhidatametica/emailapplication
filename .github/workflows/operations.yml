@@ -6,17 +6,17 @@ name: Addition
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
     push:
-      branches: main
+      branches: [main]
     
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  name : addition
-# The type of runner that the job will run on
-  runs-on : ubuntu-latest
+  job1 :  
+    name : addition
+    runs-on : ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-  steps:
+    steps:
       - name: Addition of 2 and 4
         shell: bash
         run: |
